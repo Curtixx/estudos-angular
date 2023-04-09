@@ -1,0 +1,8 @@
+<form>
+  <input type="text" name="name" id="name" [(ngModel)]="name">
+  <input type="submit" value="enviar" id="">
+</form>
+<div *ngIf="name.length < 3">
+  <p>nome nao valido</p>
+</div>
+<p>{{name}}</p>
